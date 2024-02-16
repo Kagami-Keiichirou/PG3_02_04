@@ -1,13 +1,10 @@
-﻿#include "Rectangle.h"
+#include "Rectangle.h"
 #include<stdio.h>
-Rectangle::Rectangle(float a, float b) {
-	width = a;
-	height = b;
-	area = 0;
-}
+
 void Rectangle::Size() {
-	area = width * height;
+	radius_ = radius_ * radius_;
 }
+
 void Rectangle::Draw() {
-	printf("–ĘĎ‚Í%f\n", area);
+	printf("%f\n", radius_);
 }

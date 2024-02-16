@@ -1,11 +1,10 @@
-﻿#include "Circle.h"
+#include "Circle.h"
 #include<stdio.h>
-Circle::Circle(float i) {
-	a = i;
-}
+
 void Circle::Size() {
-	a *= 3.14;
+	radius_ = radius_ * radius_ * pi_;
 }
+
 void Circle::Draw() {
-	printf("–ĘĎ‚Í%f\n", a);
+	printf("%f\n", radius_);
 }

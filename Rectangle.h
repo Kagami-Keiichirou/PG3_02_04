@@ -1,13 +1,14 @@
 #pragma once
-#include"IShape.h"
-class Rectangle :public IShape
-{
+#include "IShape.h"
+#include<stdio.h>
+
+class Rectangle : public IShape {
 public:
-	void Size()override;
-	void Draw()override;
-	Rectangle(float a, float b);
+	void Size();
+
+	void Draw();
+
 private:
-	float width;
-	float height;
-	float area;
+	float radius_ = 20.0f;
 };
+
